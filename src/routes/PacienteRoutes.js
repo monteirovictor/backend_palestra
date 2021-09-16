@@ -1,10 +1,9 @@
 const express = require('express');
 
-const router = express.router();
+const router = express.Router();
 
 const PacienteController = require('../controller/PacienteController');
 
-
-router.post('/Paciente',PacienteController.create);
+router.post('/',PacienteController.create);
 
 module.exports = router;
