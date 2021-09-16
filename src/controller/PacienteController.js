@@ -1,10 +1,11 @@
-const PacienteModel =  require('../model/PacienteModel');
+const PacienteModel = require('../model/PacienteModel');
 
 class PacienteController{
 
     async create(req,res){
 
        const Paciente = new PacienteModel(req.body);
+      
        await Paciente
             .save()
             .then(response=>{
@@ -14,4 +15,7 @@ class PacienteController{
                 return res.status(500).json(error);
             });
     }
+
 }
+
+module.exports = new PacienteController();
