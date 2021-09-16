@@ -2,11 +2,11 @@ const express = require('express');
 
 const server = express();
 
-server.get('/pacientes',(req,res)=>{
-    res.send("Teste");
-})
+server.use(express.json());
 
+const PacienteRoutes = require('./routes/PacienteRoutes');
 
+server.use('/paciente',PacienteRoutes);
 
 
 server.listen(3000,()=>{

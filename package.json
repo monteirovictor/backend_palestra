@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":" nodemon src/index.js"
+    "start": " nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/monteirovictor/backend_palestra#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^6.0.6",
     "nodemon": "^2.0.12"
   }
 }
