@@ -3,7 +3,7 @@ const express = require('express');
 const server = express();
 
 server.get('/pacientes',(req,res)=>{
-    res.send("oláas");
+    res.send("Teste");
 })
 
 
