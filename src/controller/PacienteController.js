@@ -2,6 +2,9 @@ const PacienteModel = require('../model/PacienteModel');
 
 class PacienteController{
 
+   
+
+    // Inserção
     async create(req,res){
 
        const Paciente = new PacienteModel(req.body);
@@ -15,6 +18,7 @@ class PacienteController{
                 return res.status(500).json(error);
             });
     }
+
 
 }
 
